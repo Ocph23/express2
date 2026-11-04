@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <h1>Tambah Data Siswa</h1>
+
+    <form class="w-[25%] rounded-xl bg-gray-300 p-5 m-5 flex flex-col" 
+        action="/tambahSiswa" method="POST">
+        <label  for="id">Id</label>
+        <input class="border-2 border-amber-300" type="text" id="id" name="id" required><br>
+
+        <label style="width: 100px !important;" for="nama">Nama:</label>
+        <input class="border-2 border-amber-300" type="text" id="nama" name="nama" required><br>
+
+        <label style="width: 100px !important;" for="umur">Umur:</label>
+        <input class="border-2 border-amber-300" type="number" id="umur" name="umur" required><br>
+
+        <label style="width: 100px !important;"  for="pekerjaan">Pekerjaan:</label>
+        <input class="border-2 border-amber-300" type="text" id="pekerjaan" name="pekerjaan" required><br>
+        
+        <button class="p-2 m-2 bg-green-400" type="submit">Tambah Siswa</button>
+    </form>
+</body>
+</html>
