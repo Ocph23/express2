@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body>
+
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="w-[30%]">
+            <h1 class="mb-2">Tambah Data Siswa</h1>
+            <form class="rounded-xl bg-gray-300 p-5 flex flex-col" action="/siswa/simpan" method="POST">
+
+                <label style="width: 100px">NISN:</label>
+                <input class="border-2 border-amber-100 mb-2" name="nisn" required>
+
+                <label style="width: 100px">Nama Siswa:</label>
+                <input class="border-2 border-amber-100 mb-2" name="nama" required>
+
+                <label style="width: 100px">Jenis Kelamin:</label>
+                <input class="border-2 border-amber-100 mb-2" name="jeniskelamin" required>
+
+                <label style="width: 100px">Tempat Lakir:</label>
+                <input class="border-2 border-amber-100 mb-2" name="tempatlahir" required>
+
+                <label style="width: 100px">Tanggal Lakir:</label>
+                <input class="border-2 border-amber-100 mb-2" name="tanggallahir" type="date" required>
+
+                <label style="width: 100px">Agama</label>
+                <select class="border-2 border-amber-100 mb-2" name="agama" required>
+                    <option value="kristen">Kristen</option>
+                    <option value="islam">Islam</option>
+                    <option value="katolik">Katolik</option>
+                </select>
+
+                <label style="width: 100px">Alamat</label>
+                <textarea class="border-2 border-amber-100 mb-2" name="alamat" required></textarea>
+
+                <button class="p-2 m-2 bg-green-400" type="submit">Simpan</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

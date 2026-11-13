@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body>
+
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="w-[30%]">
+            <h1 class="mb-2">Tambah Data Siswa</h1>
+            <form class="rounded-xl bg-gray-300 p-5 flex flex-col" action="/buku/simpan" method="POST">
+
+                <label style="width: 100px">Judul Buku:</label>
+                <input class="border-2 border-amber-100 mb-2" name="judulbuku" required>
+
+                <label style="width: 100px">Penulis:</label>
+                <input class="border-2 border-amber-100 mb-2" name="penulis" required>
+
+                <label style="width: 100px">Tahun Terbit</label>
+                <input class="border-2 border-amber-100 mb-2" type="number" name="tahunterbit" required>
+
+
+                <label style="width: 100px">Kategori</label>
+                <select class="border-2 border-amber-100 mb-2" name="kategori" required>
+                    <option value="pelajaran">Pelajaran</option>
+                    <option value="novel">Novel</option>
+                    <option value="majalah">Majalah</option>
+                </select>
+
+                <label style="width: 100px">ISBN</label>
+                <input class="border-2 border-amber-100 mb-2" name="isbn" required>
+
+                <button class="p-2 m-2 bg-green-400" type="submit">Simpan</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

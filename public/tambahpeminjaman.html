@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body>
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="w-[30%]">
+            <h1 class="mb-2">Tambah Data Siswa</h1>
+            <form class="rounded-xl bg-gray-300 p-5 flex flex-col" action="/peminjaman/simpan" method="POST">
+
+                <label style="width: 100px">Tanggal Pinjam:</label>
+                <input class="border-2 border-amber-100 mb-2" name="tanggalpinjam" type="datetime-local" required>
+
+                <label style="width: 100px">Siswa</label>
+                <select class="border-2 border-amber-100 mb-2" name="siswaid" required>
+                    <option value="kristen">Kristen</option>
+                </select>
+
+                <label style="width: 100px">Buku</label>
+                <select class="border-2 border-amber-100 mb-2" name="siswaid" required>
+                    <option value="kristen">Kristen</option>
+                </select>
+
+                <button class="p-2 m-2 bg-green-400" type="submit">Simpan</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
